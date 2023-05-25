@@ -2,16 +2,16 @@
 <rss version="2.0">
   <channel>
     <title>Vesti</title>
-    <link></link>
+    <link>https://urospetrovicc.github.io/sajt/</link>
     <description>Poslednja obaveštenja.</description>
     <language>sr</language>
-    <lastBuildDate></lastBuildDate>
+    <lastBuildDate>2023-05-25</lastBuildDate>
     <item>
       <title>Vest 1</title>
-      <link></link>
+      <link>https://urospetrovicc.github.io/sajt/</link>
       <description>Prvo obaveštenje</description>
-      <pubDate></pubDate>
+      <pubDate>2023-05-25</pubDate>
     </item>
-    <item>
+  </channel>
     
 </rss>
