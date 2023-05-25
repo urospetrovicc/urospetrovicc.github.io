@@ -94,7 +94,7 @@ header{
         width: 40%;
         @include stilS;
         margin-left: 10px;
-        
+       
         h1{
             color: #ffffff;
             @include font(40px);
@@ -217,7 +217,6 @@ hr{
     border: none;
 }
 
-
 #services{
     width: 100%;
     @include fleks;
@@ -229,6 +228,7 @@ hr{
        border: 2px solid $LB;
         text-align: center;
         border-radius: 5px;
+       
         .fa-solid{
             @include font(80px);
             margin: 10px 0px;  
