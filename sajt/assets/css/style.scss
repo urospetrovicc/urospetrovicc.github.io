@@ -1,0 +1,694 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto&display=swap');
+$LB: #ADD8E6;
+$DB: #00008B;
+
+
+@mixin stilS{
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+@mixin fleks{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+@mixin font($velicina){
+    font-size: $velicina;
+}
+
+img{
+    width: 100%;
+}
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+ul{
+    list-style-type: none;
+}
+
+header{
+    width: 100%;
+    background-color: $DB;
+    
+   
+}
+
+.center{
+    width: 80%;
+    margin: 0px auto;
+    @include fleks;
+
+}
+.center-content{
+    width: 80%;
+    margin: 0px auto;
+}
+
+.logo{
+    width: 15%;      
+}
+
+.navigation{
+    width: 60%;
+    nav{
+        @include fleks;
+        justify-content: end;
+    }
+    nav ul li{
+        display: inline;
+        margin-left: 10px;
+        
+    }
+    a{
+        @include font(20px);
+        @include stilS;
+        &:hover{
+        border-bottom: 2px solid #ffffff;
+       }
+    }
+}
+
+#cover{
+    background-image: url(../img/cover1.jpg);
+    width: 100%;
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 5px 5px 5px $LB;
+   
+    #cover-text{
+        width: 40%;
+        @include stilS;
+        margin-left: 10px;
+        
+        h1{
+            color: #ffffff;
+            @include font(40px);
+            @include stilS;
+
+        }
+        p{
+            @extend h1;
+            @include font(30px);
+        }
+    }
+
+}
+main{
+    width: 100%;
+    margin: 0px auto;
+}
+
+#about{
+    @include fleks;
+    width: 100%;
+    margin: 40px 0px;
+   
+}
+
+#info-image{
+    width: 40%;
+    
+    img{
+        width: 100%;
+        border-radius: 5px;  
+    }
+
+}
+
+    #info{
+        width: 45%;
+        text-align: center;
+        box-shadow: 2px 2px 2px $LB;
+        border-radius: 10px;
+        h2{
+            @include font(30px);
+            color: $DB;
+            @include stilS;
+           
+        }
+        p{
+            margin: 8px 0px;
+            @include font(25px);
+            @include stilS;
+            
+        }
+        span{
+            color: $DB;
+            font-weight: bold;
+        }
+    }
+   .h2{
+    text-align: center;
+    margin: 30px 0px;
+    color: $DB;
+    @include font(30px);
+    @include stilS;
+    font-weight: bold;
+    
+   }
+  
+#skills{
+    @include fleks;
+    flex-wrap: wrap;
+    margin: 40px auto;
+
+    h2{
+        @include font(30px);
+        @include stilS;
+    }
+   .banner{
+    @include fleks;
+    width: 45%;  
+    height: 30px;
+    margin: 15px 0px;
+    border-radius: 20px;
+    background-color: $LB;
+   } 
+   .total{
+    @include fleks;
+    height: 30px;
+    background-color: $DB;
+    border-radius: 20px;
+    p{
+        @include font(20px);
+        color: #ffffff;
+        margin: 0px 2%;
+        @include stilS;
+    }
+
+   }
+    .total1{
+        width: 95%; 
+    }
+    .total2{
+        width: 90%;
+    }
+    .total3{
+        width: 80%;
+    }
+    .total4{
+        width: 70%;
+    }
+    .total5{
+        width: 92%;
+    }
+    .total6{
+        width: 84%;
+    }
+}
+hr{
+    background-color: $LB;
+    height: 2px;
+    border: none;
+}
+
+
+#services{
+    width: 100%;
+    @include fleks;
+    margin: 40px 0px;
+    .service{
+        width: 30%;
+        height: 300px;
+       border-radius: 10px;
+       border: 2px solid $LB;
+        text-align: center;
+        border-radius: 5px;
+        .fa-solid{
+            @include font(80px);
+            margin: 10px 0px;  
+               
+        }
+        h3{
+            @include font(30px);
+            color: $DB;
+            @include stilS;
+        }
+        p{
+            @include font(20px);
+            margin: 20px 0px;
+            @include stilS;
+            font-weight: bold;
+        }
+    }
+
+}
+
+#project{
+    @include fleks;
+    text-align: center;
+    margin: 50px 0px;
+    .pr{
+        width: 45%;
+        img{
+            width: 100%;
+        }
+    }
+    h2{
+        color: $DB;
+        margin: 30px 0px;
+        @include stilS;
+    }
+}
+
+#contact{
+    text-align: center;
+    @include stilS;
+    color: $DB;
+    box-shadow: 1px 1px 1px 1px $LB;
+    margin: 50px 0px;
+    border-radius: 5px;
+    h2{
+        font-weight: bold;
+        @include font(30px);
+        
+    }
+    #form{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        .form-part{
+            width: 40%;
+            margin: 10px 0px;
+            text-align: center;
+            color: $DB;
+            font-weight: bold;
+            @include stilS;
+            input[type=text]{
+                width: 100%;
+                height: 30px;
+                border-radius: 5px;
+                border: 2px solid $LB;
+                
+            }
+            input[type=email]
+            {
+                width: 100%;
+                height: 30px;
+                border-radius: 5px;
+                border: 2px solid $LB;
+            }
+            input[type=tel]{
+                width: 100%;
+                height: 30px;
+                border-radius: 5px; 
+                border: 2px solid $LB;
+            }
+        }
+        #message{
+            width: 95%;
+            border-radius: 5px;
+            margin-top: 10px;
+            border: 2px solid $LB;
+        }
+        #btn{
+             width: 15%;
+             height: 50px;   
+             border-radius: 10px;
+             margin: 10px 0px;
+             @include font(15px);
+            background-color: #ffffff;
+            color: $DB;
+        }
+    }
+}
+
+footer{
+    background-color: $DB;
+    width: 100%;
+    @include stilS;
+}
+
+.fc-1{
+    width: 40%;
+}
+
+.fc-2{
+    text-align: center;
+    color: #ffffff;
+}
+.fc-3{
+    text-align: right;
+}
+
+.fa-brands,.fa-sitemap,.fa-rss{
+    font-size: 30px;
+    color: #ffffff;
+    margin: 10px 10px;
+   
+}
+
+@media screen and (max-width: 1025px){
+    .logo{
+        width: 18%;
+    }
+    .navigation{
+        width: 79%;
+    }
+    #info-image{
+        width: 45%;
+    }
+    #info{
+        width: 45%;
+        p{
+            margin: 18px;
+            @include font(18px);
+        }
+    
+    }
+    #cover{
+        height: 500px;
+    #cover-text{
+        h1{
+            @include font(30px);
+            
+        }
+    }
+}
+
+#services{
+    .service{
+        .fa-solid{
+            @include font(70px);
+            
+        }
+        h3{
+            @include font(25px);
+           
+        }
+    }
+}
+
+
+}
+
+@media screen and (max-width: 993px) {
+
+    #skills{
+        .banner{
+            .total{
+        p{
+            @include font(15px);
+           
+        }
+    }
+}
+    #services{
+        .service{
+            .fa-solid{
+                @include font(65px);
+                margin: 5px 0px;
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width: 850px){
+    header{
+        .center{
+            flex-direction: column;
+        }
+        .logo{
+            width: 30%;
+        }
+        .navigation{
+            nav{
+                justify-content: center;
+            }
+        }
+        
+    }
+    #about{
+        #info{
+            p{
+                margin: 5px 0px;
+            }
+        }
+    }
+
+   
+    }
+    #services{
+        .service{
+            p{
+                @include font(18px);
+                
+            }
+        }
+    }
+    
+
+
+@media screen and (max-width: 769px) {
+
+    header{
+        .logo{
+            width: 25%;
+        }
+        .navigation{
+            width: 100%;
+           
+        }
+    }
+    #cover{
+        height: 400px;
+        #cover-text{
+            h1{
+                @include font(22px);
+            }
+            p{
+                @include font(18px);
+            }
+        }
+    }
+    #skills{
+        .banner{
+        .total{
+        p{
+            @include font(12px);
+        }
+    }
+}
+    }
+    
+    #services{
+        .service{
+            .fa-solid{
+                @include font(60px);
+            }
+            h3{
+                @include font(23px);
+            }
+            p{
+                @include font(16px);
+            }
+             
+        }
+        
+    }
+    .center-content{
+        width: 90%;
+    }
+    #about{
+        #info{
+            p{
+                margin:5px 0px;
+            }
+        }
+    }
+
+    
+    footer{
+        .center{
+            .fc-1{
+                width: 30%;
+                .fa-brands,.fa-sitemap,.fa-rss{
+                    @include font(20px);
+
+                }
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width: 602px) {
+    header{
+        .center{
+            .logo{
+                width: 30%;
+            }
+            align-items: center;
+            .navigation{
+                width: 100%;
+                nav{
+                    justify-content: center;
+                    flex-direction: column;
+                    
+                    ul{
+                        display: flex;
+                        flex-direction: column;
+                         width:100%;
+                        text-align: center;
+                        li{
+                            margin: 5px 0px;
+                            border-bottom: 1px solid #ffffff;
+                           
+                        }
+                    }
+                    a{
+                        @include font(20px)
+                    }
+                }
+            }
+        }
+    }
+    #cover{
+        height: 300px;
+        #cover-text{
+            h1{
+                @include font(20px);
+            }
+            p{
+                @include font(18px);
+            }
+        }
+    }
+    .center-content{
+        width: 95%;
+        .h2{
+            @include font(35px);
+        }
+        #about{
+            flex-direction: column;
+            #info-image{
+                
+                    width: 50%;
+            }
+            #info-img{
+                width: 100%;
+            }
+            #info{
+                width: 100%;
+                p{
+                    @include font(25px);
+                }
+            }
+        }
+        #skills{
+            flex-direction: column;
+            .banner{
+                width: 100%;
+            }
+        }
+        #services{
+            flex-direction: column;
+            .service{
+                width: 100%;
+                margin: 20px 0px;
+                .fa-solid{
+                    @include font(70px);
+                }
+                h3{
+                    @include font(32px);
+                }
+                p{
+                    @include font(23px);
+                }
+            }
+        }
+
+        #project{
+            flex-direction: column;
+            .pr{
+                width: 100%;
+                margin: 15px 0px;
+            }
+        }
+        #contact{
+            box-shadow: none;
+           #form{
+            align-items: center;
+            .form-part{
+                width: 100%;
+                
+            }
+            flex-direction: column;
+            
+           }
+        }
+    }
+
+    footer{
+        .center{
+            .fc-1{
+                display: flex;
+                flex-direction: column;
+                .fa-brands,.fa-sitemap,.fa-rss{
+                    @include font(30px);
+                }
+                h3{
+                    @include font(15px);
+                }
+            }
+           
+        }
+    }
+
+}
+
+@media screen and (max-width: 480px){
+    
+    #cover{
+        height: 250px;
+        #cover-text{
+            h1{
+                @include font(12px);
+            }
+            p{
+                @include font(10px);
+            }
+        }
+    }
+    .center-content{
+        #about{
+        #info{
+            p{
+                @include font(18px);
+            }
+        }
+    }
+    .h2{
+        @include font(30px);
+    }
+
+    #services{
+        .service{
+            h3{
+                @include font(25px);
+            }
+            p{
+                @include font(21px);
+            }
+        }
+    }
+    }
+}
+
+}

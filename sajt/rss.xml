@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Vesti</title>
+    <link></link>
+    <description>Poslednja obaveštenja.</description>
+    <language>sr</language>
+    <lastBuildDate></lastBuildDate>
+    <item>
+      <title>Vest 1</title>
+      <link></link>
+      <description>Prvo obaveštenje</description>
+      <pubDate></pubDate>
+    </item>
+    <item>
+    
+</rss>
