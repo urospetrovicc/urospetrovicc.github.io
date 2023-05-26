@@ -217,6 +217,16 @@ hr{
     border: none;
 }
 
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg)
+    }
+    100% {
+      transform: rotate(360deg)
+    }
+  }
+
 #services{
     width: 100%;
     @include fleks;
@@ -231,8 +241,8 @@ hr{
        
         .fa-solid{
             @include font(80px);
-            margin: 10px 0px;  
-               
+            margin: 10px 0px;   
+            animation: rotate 2s linear infinite;
         }
         h3{
             @include font(30px);
