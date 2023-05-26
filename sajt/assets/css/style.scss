@@ -240,7 +240,7 @@ hr{
         border-radius: 5px;
        
         .fa-solid{
-            @include font(80px);
+            @include font(60px);
             margin: 10px 0px;   
             animation: rotate 2s linear infinite;
         }
@@ -418,15 +418,20 @@ footer{
         }
     }
 }
+}
     #services{
         .service{
             .fa-solid{
-                @include font(65px);
-                margin: 5px 0px;
+                @include font(50px);
+                margin: 10px 0px;
             }
+            p{
+                @include font(20px);
+               }
         }
     }
     
+
 }
 
 @media screen and (max-width: 850px){
@@ -453,15 +458,19 @@ footer{
     }
 
    
-    }
+    
     #services{
         .service{
+            h3{
+                @include font(22px);
+            }
             p{
                 @include font(18px);
                 
             }
         }
     }
+}
     
 
 
@@ -499,11 +508,12 @@ footer{
     
     #services{
         .service{
+            height: 290px;
             .fa-solid{
-                @include font(60px);
+                @include font(50px);
             }
             h3{
-                @include font(23px);
+                @include font(22px);
             }
             p{
                 @include font(16px);
@@ -613,13 +623,13 @@ footer{
                 width: 100%;
                 margin: 20px 0px;
                 .fa-solid{
-                    @include font(70px);
+                    @include font(50px);
                 }
                 h3{
                     @include font(32px);
                 }
                 p{
-                    @include font(23px);
+                    @include font(24px);
                 }
             }
         }
@@ -690,15 +700,20 @@ footer{
 
     #services{
         .service{
+            height: 250px;
+            .fa-solid{
+                @include font(50px);
+            }
             h3{
-                @include font(25px);
+                @include font(22px);
             }
             p{
-                @include font(21px);
+                @include font(20px);
             }
         }
     }
     }
 }
 
-}
+
+

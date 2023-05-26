@@ -10,7 +10,7 @@ img {
 
 a {
   text-decoration: none;
-  color: white;
+  color: #ffffff;
 }
 
 ul {
@@ -221,7 +221,7 @@ hr {
   border-radius: 5px;
 }
 #services .service .fa-solid {
-  font-size: 80px;
+  font-size: 60px;
   margin: 10px 0px;
   animation: rotate 2s linear infinite;
 }
@@ -374,12 +374,15 @@ footer {
   #skills .banner .total p {
     font-size: 15px;
   }
-  #skills #services .service .fa-solid {
-    font-size: 65px;
-    margin: 5px 0px;
+  #services .service .fa-solid {
+    font-size: 50px;
+    margin: 10px 0px;
+  }
+  #services .service p {
+    font-size: 20px;
   }
 }
-@media screen and (max-width: 993px) and (max-width: 850px) {
+@media screen and (max-width: 850px) {
   header .center {
     flex-direction: column;
   }
@@ -392,13 +395,14 @@ footer {
   #about #info p {
     margin: 5px 0px;
   }
-}
-@media screen and (max-width: 993px) {
+  #services .service h3 {
+    font-size: 22px;
+  }
   #services .service p {
     font-size: 18px;
   }
 }
-@media screen and (max-width: 993px) and (max-width: 769px) {
+@media screen and (max-width: 769px) {
   header .logo {
     width: 25%;
   }
@@ -417,11 +421,14 @@ footer {
   #skills .banner .total p {
     font-size: 12px;
   }
+  #services .service {
+    height: 290px;
+  }
   #services .service .fa-solid {
-    font-size: 60px;
+    font-size: 50px;
   }
   #services .service h3 {
-    font-size: 23px;
+    font-size: 22px;
   }
   #services .service p {
     font-size: 16px;
@@ -439,7 +446,7 @@ footer {
     font-size: 20px;
   }
 }
-@media screen and (max-width: 993px) and (max-width: 602px) {
+@media screen and (max-width: 602px) {
   header .center {
     align-items: center;
   }
@@ -510,13 +517,13 @@ footer {
     margin: 20px 0px;
   }
   .center-content #services .service .fa-solid {
-    font-size: 70px;
+    font-size: 50px;
   }
   .center-content #services .service h3 {
     font-size: 32px;
   }
   .center-content #services .service p {
-    font-size: 23px;
+    font-size: 24px;
   }
   .center-content #project {
     flex-direction: column;
@@ -546,7 +553,7 @@ footer {
     font-size: 15px;
   }
 }
-@media screen and (max-width: 993px) and (max-width: 480px) {
+@media screen and (max-width: 480px) {
   #cover {
     height: 250px;
   }
@@ -562,10 +569,16 @@ footer {
   .center-content .h2 {
     font-size: 30px;
   }
+  .center-content #services .service {
+    height: 250px;
+  }
+  .center-content #services .service .fa-solid {
+    font-size: 50px;
+  }
   .center-content #services .service h3 {
-    font-size: 25px;
+    font-size: 22px;
   }
   .center-content #services .service p {
-    font-size: 21px;
+    font-size: 20px;
   }
 }/*# sourceMappingURL=style.css.map */
