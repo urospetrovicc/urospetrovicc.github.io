@@ -247,6 +247,14 @@ hr {
 #project .pr {
   width: 45%;
 }
+#project .pr p {
+  font-family: "Open Sans", sans-serif;
+  color: #00008B;
+  font-weight: bold;
+}
+#project .pr a:hover {
+  filter: brightness(40%);
+}
 #project .pr img {
   width: 100%;
 }

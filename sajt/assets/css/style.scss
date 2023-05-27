@@ -265,6 +265,16 @@ hr{
     margin: 50px 0px;
     .pr{
         width: 45%;
+        p{
+            @include stilS;
+            color: $DB;
+            font-weight: bold;
+        }
+        a{
+            &:hover{
+                filter: brightness(40%);
+            }
+        }
         img{
             width: 100%;
         }
