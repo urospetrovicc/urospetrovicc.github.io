@@ -6,6 +6,7 @@ img {
 * {
   margin: 0px;
   padding: 0px;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -75,7 +76,7 @@ header {
 #cover #cover-text {
   width: 40%;
   font-family: "Open Sans", sans-serif;
-  margin-left: 10px;
+  margin-left: 30px;
 }
 #cover #cover-text h1, #cover #cover-text p {
   color: #ffffff;
@@ -223,7 +224,7 @@ hr {
 #services .service .fa-solid {
   font-size: 60px;
   margin: 10px 0px;
-  animation: rotate 2s linear infinite;
+  animation: rotate 6s linear infinite;
 }
 #services .service h3 {
   font-size: 30px;

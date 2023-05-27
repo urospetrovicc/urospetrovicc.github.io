@@ -35,6 +35,7 @@ img{
 *{
     margin: 0px;
     padding: 0px;
+    scroll-behavior: smooth;
 }
 
 a{
@@ -103,7 +104,7 @@ header{
     #cover-text{
         width: 40%;
         @include stilS;
-        margin-left: 10px;
+        margin-left: 30px;
        
         h1{
             color: $WH;
@@ -252,7 +253,7 @@ hr{
         .fa-solid{
             @include font(60px);
             margin: 10px 0px;   
-            animation: rotate 2s linear infinite;
+            animation: rotate 6s linear infinite;
         }
         h3{
             @include font(30px);
