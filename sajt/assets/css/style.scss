@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto&display=swap');
 $LB: #ADD8E6;
 $DB: #00008B;
-
+$WH: #ffffff;
+@mixin centriranje{
+    margin: 0px auto;
+}
 
 @mixin stilS{
     font-family: 'Open Sans', sans-serif;
@@ -17,6 +20,13 @@ $DB: #00008B;
     font-size: $velicina;
 }
 
+@mixin forme{
+            width: 100%;
+            height: 30px;
+            border-radius: 5px;
+            border: 2px solid $LB;
+}
+
 img{
     width: 100%;
 }
@@ -29,7 +39,7 @@ img{
 
 a{
     text-decoration: none;
-    color: #ffffff;
+    color: $WH;
 }
 
 ul{
@@ -45,13 +55,13 @@ header{
 
 .center{
     width: 80%;
-    margin: 0px auto;
+    @include centriranje;
     @include fleks;
 
 }
 .center-content{
     width: 80%;
-    margin: 0px auto;
+    @include centriranje;
 }
 
 .logo{
@@ -73,7 +83,7 @@ header{
         @include font(20px);
         @include stilS;
         &:hover{
-        border-bottom: 2px solid #ffffff;
+        border-bottom: 2px solid $WH;
        }
     }
 }
@@ -96,7 +106,7 @@ header{
         margin-left: 10px;
        
         h1{
-            color: #ffffff;
+            color: $WH;
             @include font(40px);
             @include stilS;
 
@@ -110,7 +120,7 @@ header{
 }
 main{
     width: 100%;
-    margin: 0px auto;
+    @include centriranje;
 }
 
 #about{
@@ -186,7 +196,7 @@ main{
     border-radius: 20px;
     p{
         @include font(20px);
-        color: #ffffff;
+        color: $WH;
         margin: 0px 2%;
         @include stilS;
     }
@@ -310,24 +320,15 @@ hr{
             font-weight: bold;
             @include stilS;
             input[type=text]{
-                width: 100%;
-                height: 30px;
-                border-radius: 5px;
-                border: 2px solid $LB;
+                @include forme;
                 
             }
             input[type=email]
             {
-                width: 100%;
-                height: 30px;
-                border-radius: 5px;
-                border: 2px solid $LB;
+                @include forme;
             }
             input[type=tel]{
-                width: 100%;
-                height: 30px;
-                border-radius: 5px; 
-                border: 2px solid $LB;
+                @include forme;
             }
         }
         #message{
@@ -342,7 +343,7 @@ hr{
              border-radius: 10px;
              margin: 10px 0px;
              @include font(15px);
-            background-color: #ffffff;
+            background-color: $WH;
             color: $DB;
         }
     }
@@ -360,7 +361,7 @@ footer{
 
 .fc-2{
     text-align: center;
-    color: #ffffff;
+    color: $WH;
 }
 .fc-3{
     text-align: right;
@@ -368,7 +369,7 @@ footer{
 
 .fa-brands,.fa-sitemap,.fa-rss{
     font-size: 30px;
-    color: #ffffff;
+    color: $WH;
     margin: 10px 10px;
    
 }
