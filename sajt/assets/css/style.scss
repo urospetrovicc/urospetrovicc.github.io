@@ -457,7 +457,7 @@ footer{
             flex-direction: column;
         }
         .logo{
-            width: 30%;
+            width: 20%;
         }
         .navigation{
             nav{
@@ -577,11 +577,10 @@ footer{
                 nav{
                     justify-content: center;
                     flex-direction: column;
-                    
                     ul{
                         display: flex;
                         flex-direction: column;
-                         width:100%;
+                        width:100%;
                         text-align: center;
                         li{
                             margin: 2px 0px;

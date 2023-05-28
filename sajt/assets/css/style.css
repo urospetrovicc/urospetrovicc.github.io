@@ -397,7 +397,7 @@ footer {
     flex-direction: column;
   }
   header .logo {
-    width: 30%;
+    width: 20%;
   }
   header .navigation nav {
     justify-content: center;
