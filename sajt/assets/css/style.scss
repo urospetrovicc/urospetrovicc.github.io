@@ -27,6 +27,10 @@ $WH: #ffffff;
             border: 2px solid $LB;
 }
 
+@mixin margine{
+    margin: 20px 0px;
+}
+
 img{
     width: 100%;
 }
@@ -127,7 +131,7 @@ main{
 #about{
     @include fleks;
     width: 100%;
-    margin: 40px 0px;
+    @include margine;
    
 }
 
@@ -165,7 +169,7 @@ main{
     }
    .h2{
     text-align: center;
-    margin: 20px 0px;
+    @include margine;
     color: $DB;
     @include font(30px);
     @include stilS;
@@ -176,7 +180,7 @@ main{
 #skills{
     @include fleks;
     flex-wrap: wrap;
-    margin: 40px auto;
+    margin: 20px auto;
 
     h2{
         @include font(30px);
@@ -241,7 +245,7 @@ hr{
 #services{
     width: 100%;
     @include fleks;
-    margin: 40px 0px;
+   @include margine;
     .service{
         width: 30%;
         height: 300px;
@@ -262,7 +266,7 @@ hr{
         }
         p{
             @include font(20px);
-            margin: 20px 0px;
+            @include margine;
             @include stilS;
             font-weight: bold;
         }
@@ -273,7 +277,7 @@ hr{
 #project{
     @include fleks;
     text-align: center;
-    margin: 50px 0px;
+   @include margine;
     .pr{
         width: 45%;
         p{
@@ -302,7 +306,7 @@ hr{
     @include stilS;
     color: $DB;
     box-shadow: 1px 1px 1px 1px $LB;
-    margin: 50px 0px;
+    @include margine;
     border-radius: 5px;
     h2{
         font-weight: bold;
@@ -313,6 +317,7 @@ hr{
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
+       @include margine;
         .form-part{
             width: 40%;
             margin: 10px 0px;
@@ -725,6 +730,20 @@ footer{
         }
     }
     }
+    footer{
+        .center{
+            .fc-1{
+                .fa-brands,.fa-sitemap,.fa-rss{
+                    @include font(20px);
+                }
+                h3{
+                    @include font(11px);
+                }
+            }
+           
+        }
+    }
+    
 }
 
 

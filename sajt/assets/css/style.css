@@ -97,7 +97,7 @@ main {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  margin: 40px 0px;
+  margin: 20px 0px;
 }
 
 #info-image {
@@ -143,7 +143,7 @@ main {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  margin: 40px auto;
+  margin: 20px auto;
 }
 #skills h2 {
   font-size: 30px;
@@ -211,7 +211,7 @@ hr {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 40px 0px;
+  margin: 20px 0px;
 }
 #services .service {
   width: 30%;
@@ -243,7 +243,7 @@ hr {
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  margin: 50px 0px;
+  margin: 20px 0px;
 }
 #project .pr {
   width: 45%;
@@ -270,7 +270,7 @@ hr {
   font-family: "Open Sans", sans-serif;
   color: #00008B;
   box-shadow: 1px 1px 1px 1px #ADD8E6;
-  margin: 50px 0px;
+  margin: 20px 0px;
   border-radius: 5px;
 }
 #contact h2 {
@@ -281,6 +281,7 @@ hr {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  margin: 20px 0px;
 }
 #contact #form .form-part {
   width: 40%;
@@ -589,5 +590,11 @@ footer {
   }
   .center-content #services .service p {
     font-size: 20px;
+  }
+  footer .center .fc-1 .fa-brands, footer .center .fc-1 .fa-sitemap, footer .center .fc-1 .fa-rss {
+    font-size: 20px;
+  }
+  footer .center .fc-1 h3 {
+    font-size: 11px;
   }
 }/*# sourceMappingURL=style.css.map */
