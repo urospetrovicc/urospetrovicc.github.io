@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto&display=swap");
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 img {
   width: 100%;
 }
@@ -38,9 +46,11 @@ header {
 
 .logo {
   width: 15%;
+  animation: fadeIn 2s;
 }
 
 .navigation {
+  animation: fadeIn 2s;
   width: 60%;
 }
 .navigation nav {
@@ -82,6 +92,7 @@ header {
   color: #ffffff;
   font-size: 40px;
   font-family: "Open Sans", sans-serif;
+  animation: fadeIn 2s;
 }
 #cover #cover-text p {
   font-size: 30px;

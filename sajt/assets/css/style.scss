@@ -31,6 +31,11 @@ $WH: #ffffff;
     margin: 20px 0px;
 }
 
+@keyframes fadeIn{
+	0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
 img{
     width: 100%;
 }
@@ -71,9 +76,11 @@ header{
 
 .logo{
     width: 15%;      
+    animation: fadeIn 2s;
 }
 
 .navigation{
+    animation: fadeIn 2s;
     width: 60%;
     nav{
         @include fleks;
@@ -114,6 +121,7 @@ header{
             color: $WH;
             @include font(40px);
             @include stilS;
+            animation: fadeIn 2s;
 
         }
         p{
